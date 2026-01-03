@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="water.css">
+    <title>Water pH calculator</title>
+</head>
+
+<body>
+    <center>
+        <h1>💧Aqua pH calculator</h1>
+        <div class="water-container">
+            <h4>Select water type</h4>
+            <label for="tapwater-value" class="tapwater-value">Tapwater</label>
+            <input type="checkbox" name="" id="tapwater-value" class="tapwater-value"><br>
+            <label for="rainwater-value" class="rainwater-value">Rain water</label>
+            <input type="checkbox" name="" id="rainwater-value" class="rainwater-value"><br><br>
+            <label for="" class="tempvalue">Select Temperature range</label>
+            <input type="range" min="-100" max="100" value="0" id="tempvalue">
+            <center> <span id="temp">0</span><span>°C</span> </center><br>
+
+        </div> <br>
+        <button id="submit">Calculate pH</button>
+        <p id="result">RESULT</p>
+    </center>
+    <script src="water.js"></script>
+</body>
+
+</html>
